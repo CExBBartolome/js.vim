@@ -9,5 +9,6 @@
 	"undef":true,
 	"unused":true,
 	"strict":true,
-	"maxcomplexity":10
+	"maxcomplexity":10,
+	"node":true
 }
