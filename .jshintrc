@@ -1,0 +1,12 @@
+{
+	"camelcase":true,
+	"curly":true,
+	"eqeqeq":true,
+	"latedef":true,
+	"newcap":true,
+	"nonbsp":true,
+	"quotmark":true,
+	"undef":true,
+	"unused":true,
+	"strict":true
+}
