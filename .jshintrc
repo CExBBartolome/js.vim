@@ -8,5 +8,6 @@
 	"quotmark":true,
 	"undef":true,
 	"unused":true,
-	"strict":true
+	"strict":true,
+	"maxcomplexity":10
 }
