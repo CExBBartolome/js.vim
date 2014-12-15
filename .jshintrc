@@ -10,5 +10,6 @@
 	"unused":true,
 	"strict":true,
 	"maxcomplexity":10,
+	"maxlen":80,
 	"node":true
 }
