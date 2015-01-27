@@ -53,3 +53,4 @@ set number
 " set foldmethod=syntax
 " set foldlevelstart=100
 set path=$PWD/**
+set hlsearch
