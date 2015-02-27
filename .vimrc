@@ -21,6 +21,7 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/syntastic'
 Plugin 'marijnh/tern_for_vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'tpope/vim-fugitive'
 
 " These are the tweaks I apply to YCM's config, you don't need them but they
 " might help.
