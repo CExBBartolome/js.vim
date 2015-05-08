@@ -2,10 +2,6 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 "set t_Co=256
 syntax on
-
-" Set filetype to javascript for .js extensions
-au BufNewFile,BufRead *.js set filetype=javascript
-
 "set background=dark
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -61,6 +57,9 @@ set completeopt-=preview
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+" Set filetype to javascript for .js extensions
+au BufNewFile,BufRead *.js UltiSnipsAddFiletype javascript
 
 " To ignore plugin indent changes, instead use:
 " filetype plugin on
