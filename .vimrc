@@ -21,7 +21,26 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/syntastic'
 Plugin 'marijnh/tern_for_vim'
 Plugin 'Valloric/YouCompleteMe'
+" YouCompleteMe and UltiSnips compatibility, with the helper of supertab
+let g:ycm_key_list_select_completion   = ['<C-j>', '<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
+
+Plugin 'ervandew/supertab'
+let g:SuperTabDefaultCompletionType    = '<C-n>'
+let g:SuperTabCrMapping                = 0
+
+Plugin 'SirVer/ultisnips'
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
 Plugin 'tpope/vim-fugitive'
+
+"Plugin 'MarcWeber/vim-addon-mw-utils'
+"Plugin 'tomtom/tlib_vim'
+"Plugin 'garbas/vim-snipmate'
+"imap ss <esc>a<Plug>snipMateNextOrTrigger
+"smap ss <Plug>snipMateNextOrTrigger
 
 " These are the tweaks I apply to YCM's config, you don't need them but they
 " might help.
@@ -54,4 +73,7 @@ set number
 " set foldmethod=syntax
 " set foldlevelstart=100
 set path=$PWD/**
+set mouse=a
 set hlsearch
+let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
+set colorcolumn=100
