@@ -84,3 +84,9 @@ set mouse=a
 set hlsearch
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 set colorcolumn=100
+set statusline=
+set statusline+=%2*[%n%H%M%R%W]%*\
+set statusline+=%-40f\
+set statusline+=%=%1*%y%*%*\
+set statusline+=%10((%l,%c)%)\
+set laststatus=2
