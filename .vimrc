@@ -14,7 +14,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'jelera/vim-javascript-syntax'
 
 Plugin 'pangloss/vim-javascript'
-Plugin 'nathanaelkane/vim-indent-guides'
+"Plugin 'nathanaelkane/vim-indent-guides'
 
 Plugin 'Raimondi/delimitMate'
 
