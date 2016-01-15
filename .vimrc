@@ -1,4 +1,9 @@
 set nocompatible              " be iMproved, required
+
+" set tab size
+set tabstop=2
+set shiftwidth=2
+
 filetype off                  " required
 "set t_Co=256
 syntax on
@@ -19,6 +24,9 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'Raimondi/delimitMate'
 
 Plugin 'scrooloose/syntastic'
+let g:syntastic_javascript_checkers=['jscs','jshint']
+let g:syntastic_check_on_open=0
+
 Plugin 'marijnh/tern_for_vim'
 Plugin 'Valloric/YouCompleteMe'
 " YouCompleteMe and UltiSnips compatibility, with the helper of supertab
@@ -73,7 +81,6 @@ au BufNewFile,BufRead *.js UltiSnipsAddFiletype javascript
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 set backspace=indent,eol,start
-let g:syntastic_check_on_open=1
 " set paste
 set number
 " au FileType javascript call JavaScriptFold()
@@ -81,8 +88,12 @@ set number
 " set foldlevelstart=100
 set path=$PWD/**
 set mouse=a
+map <ScrollWheelDown> <Down>
+map <ScrollWheelUp> <Up>
 set hlsearch
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
+let g:netrw_altv=1              " open files on right
+let g:netrw_preview=1           " open previews vertically
 set colorcolumn=100
 set statusline=
 set statusline+=%2*[%n%H%M%R%W]%*\
@@ -90,3 +101,4 @@ set statusline+=%-40f\
 set statusline+=%=%1*%y%*%*\
 set statusline+=%10((%l,%c)%)\
 set laststatus=2
+set dir=~/.swp
